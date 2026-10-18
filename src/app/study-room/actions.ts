@@ -52,7 +52,7 @@ export async function extractPdfText(formData: FormData): Promise<ActionResult> 
 
     const buffer = Buffer.from(await file.arrayBuffer())
 
-    // Requires: npm install pdf-parse@1.1.1
+  // @ts-ignore
     const pdfParse = (await import('pdf-parse/lib/pdf-parse.js')).default
     const data = await pdfParse(buffer)
 

@@ -7,7 +7,7 @@ StudySync is a smart study planner and focus web app designed to help students o
 
 ## Live Demo
 
-Available on Vercel: [Insert your Vercel URL here]
+Available on Vercel: study-sync-time.vercel.app
 
 ## Tech Stack
 

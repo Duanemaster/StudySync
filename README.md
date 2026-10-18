@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StudySync
 
-## Getting Started
+**Status: Work in Progress**  
+_This project is not yet intended for production, but it is available for testing, preview, and code review. It is deployed and hosted on Vercel._
 
-First, run the development server:
+StudySync is a smart study planner and focus web app designed to help students organize tasks, manage free time, and study effectively. It features an automated planner, a Pomodoro-style focus timer, and a local AI assistant that can generate flashcards and answer questions based on uploaded PDF notes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Available on Vercel: [Insert your Vercel URL here]
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** Next.js App Router (Next 15+, React 19)
+- **Language:** TypeScript
+- **Database & Auth:** Supabase (with Row Level Security)
+- **Styling:** Tailwind CSS, shadcn/ui, Framer Motion
+- **Local AI:** Ollama (`qwen2.5:7b-instruct`)
+- **PDF Parsing:** `pdf-parse`
 
-## Learn More
+## Core Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Smart Planner:** Automatically schedules study tasks into available free-time blocks based on priority, due dates, and estimated durations.
+- **Focus Mode:** A timestamp-based study timer with break intervals that tracks daily study minutes and streaks.
+- **Local AI Assistant:** Users can upload PDF notes to a local Ollama instance to automatically generate flashcards or chat with their documents contextually.
+- **Optimistic UI:** Fast, flicker-free task management using React's `useOptimistic` and Server Actions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Local Development Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Duanemaster/StudySync.git](https://github.com/Duanemaster/StudySync.git)
+   cd StudySync
+   ```
